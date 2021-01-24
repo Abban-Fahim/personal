@@ -10,6 +10,6 @@ app.get('/', (req,res)=>{
 	res.render('home', {skillsInfo: skills});
 });
 
-app.listen(3000 || process.env.PORT, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
 	console.log('Server has started!');
 });
