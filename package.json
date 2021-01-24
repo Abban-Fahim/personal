@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "type": "module",
-  "engines": "v14.15.0",
+  "engines": "14.x",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
