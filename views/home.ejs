@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Comfortaa:wght@700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+		<meta name="viewport" content= "width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="icon-style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<title>Homepage</title>
+	</head>
+	<body>
+		<div class="container-fluid" id="top">
+			<h1>Hi!</h1>
+			<h3>Welcome To Abban Fahim's Personal Website!</h3>
+			<i class="bi bi-controller"></i>
+			<i class="bi bi-terminal"></i>
+			<i class="bi bi-globe"></i>
+			<i class="bi bi-chat-text"></i>
+		</div>
+		<div class="container-fluid" id="intro">
+			<h2>I am a
+			<span>Web <i class="bi bi-code-square"></i> Developer</span>
+			</h2>
+		</div>
+
+		<div class="container-fluid" id="skills">
+
+			<h2>Some of my skills include:</h2>
+			<div class="row">
+				<% skillsInfo.forEach(skill=>{ %>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="card">
+						<div><img src="img/<%= skill.img %>.png" class="card-img-top"></div>
+						<div class="card-body">
+							<h4 class="card-title"><%= skill.title %></h4>
+							<p class="card-text"><%- skill.desc %></p>
+						</div>
+					</div>
+				</div>
+
+				<% }) %>
+
+			</div>
+
+		</div>
+		
+	</body>
+</html>
