@@ -21,7 +21,8 @@
 			<i class="bi bi-globe"></i>
 			<i class="bi bi-chat-text"></i>
 		</div>
-		<div class="container-fluid" id="intro">
+
+		<div id="transition">
 			<h2>I am a
 			<span>Web <i class="bi bi-code-square"></i> Developer</span>
 			</h2>
@@ -31,7 +32,7 @@
 
 			<h2>Some of my skills include:</h2>
 			<div class="row">
-				<% skillsInfo.forEach(skill=>{ %>
+				<% skillsInfo.skills.forEach(skill=>{ %>
 
 				<div class="col-md-4 col-sm-6">
 					<div class="card">
@@ -48,6 +49,36 @@
 			</div>
 
 		</div>
+
+		<div id="transition">
+			<h2>A few of my <span>Apps</span> include:</h2>
+		</div>
 		
+		<div class="container-fluid" id="apps">
+
+			<div class="row">
+				<% skillsInfo.apps.forEach(app=>{ %>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="card app-card">
+						<div><img src="img/<%= app.img %>" class="card-img-top"></div>
+						<div class="card-body">
+							<h4 class="card-title"><%= app.title %></h4>
+							<p class="card-text"><%- app.desc %></p>
+						</div>
+					</div>
+				</div>
+
+				<% }) %>
+
+			</div>
+
+		</div>
+
+		<footer class="container-fluid">
+			<a href="https://instagram.com/abban_fahim"><i class="bi bi-instagram"></i></a>
+			<a href="https://twitter.com/@FahimAbban"><i class="bi bi-twitter"></i></a>
+			<small>© Abban Fahim 2021</small>
+		</footer>
 	</body>
 </html>

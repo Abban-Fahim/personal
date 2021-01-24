@@ -31,18 +31,25 @@ span{
 	height: 400px;
 	border-bottom-right-radius: 35px;
 	border-bottom-left-radius: 35px;
+}
+
+.container-fluid{
 	box-shadow: 16px 15px 0px #CAC8BD;
 }
 
-#intro{
+#transition{
 	text-align: center;
 }
 
-#skills{
+#skills, #apps{
 	text-align: center;
 	background-color: #91EAA7;
 	border-radius: 25px;
 	padding: 30px;
+}
+
+#apps{
+	background-color: #77F1EB;
 }
 
 #skills h2{
@@ -57,6 +64,12 @@ span{
   	box-shadow: 8px 8px 0px #46C66950;
 }
 
+.app-card{
+	background-color: #46C6C0 !important;
+  	box-shadow: 8px 8px 0px #46C6C050;
+  	margin-top: 80px;
+}
+
 .card img{
   	width: 150px;
   	height: 150px;
@@ -68,7 +81,30 @@ span{
   	box-shadow: 8px 8px 0px #46C66950;
 }
 
+.app-card img{
+	box-shadow: 8px 8px 0px #46C6C050;
+}
+
 .card-body{
   	margin-top: -70px;
   	font-family: 'Comic Neue', cursive;
+}
+
+footer{
+	background-color: #FFDA5C;
+	text-align: center;
+	border-top-right-radius: 35px;
+	border-top-left-radius: 35px;
+	margin-top: 69px;
+	padding: 69px;
+}
+
+footer a{
+	color: #827034;
+	margin: 0 36px;
+}
+
+small{
+	display: block;
+	margin-top: 45px;
 }

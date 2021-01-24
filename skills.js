@@ -1,4 +1,4 @@
-let skills = [
+const skills = [
 	{
 		title: 'Node JS',
 		desc: 'The <a href="https://insights.stackoverflow.com/survey/2020#technology-other-frameworks-libraries-and-tools-all-respondents3">most popular and in-demand</a> server-side lanuage today, Node JS has a simple and robust networking platform for applications of all scale.',
@@ -11,7 +11,7 @@ let skills = [
 	},
 	{
 		title: 'Bootstrap',
-		desc: 'Bootstrap is a front-end framework made by the dev team at <a href="twitter.com">Twitter</a> to allow ease and speed in making beautiful and responsive websites.',
+		desc: 'Bootstrap is a front-end framework made by the dev team at <a href="https://twitter.com">Twitter</a> to allow ease and speed in making beautiful and responsive websites.',
 		img: 'bootstrap'
 	},
 	{
@@ -26,4 +26,12 @@ let skills = [
 	}
 ];
 
-export default skills;
+const apps = [
+	{
+		title: 'Notes',
+		desc: 'A simple and fast <a href="https://nameless-sea-02575.herokuapp.com">note taking app</a> for your browser.',
+		img: 'notes.jpg'
+	}
+]
+
+export default {skills, apps};
